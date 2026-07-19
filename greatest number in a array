@@ -1,0 +1,25 @@
+#include <stdio.h>
+int main() {
+    int num[100], n, i, max;
+    printf("Enter number of elements:");
+    scanf("%d", &n);
+
+    printf("Enter the number:");
+    for (i = 0; i < n; i++) {
+        scanf("%d", &num[i]);
+    }
+
+    printf("The numbers are:\n");
+    for (i = 0; i < n; i++) {
+        printf("%d\t", num[i]);
+    }
+
+    max = num[0];
+    for (i = 1; i < n; i++) {
+        if (num[i] > max) {
+            max = num[i];
+        }
+    }
+    printf("\nThe Greatest number=%d", max);
+    return 0;
+}
