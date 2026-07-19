@@ -1,0 +1,18 @@
+#include <stdio.h>
+int main() {
+    float marks[100];
+    int n, i;
+    printf("Enter total no.of.students:");
+    scanf("%d", &n);
+
+    printf("Enter marks:");
+    for (i = 0; i < n; i++) {
+        scanf("%f", &marks[i]);
+    }
+
+    printf("The marks are:");
+    for (i = 0; i < n; i++) {
+        printf("%f\t", marks[i]);
+    }
+    return 0;
+}
