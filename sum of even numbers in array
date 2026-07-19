@@ -1,0 +1,25 @@
+#include <stdio.h>
+int main() {
+    int num[100], sum = 0;
+    int n, i;
+    printf("Enter total no.of.elements:");
+    scanf("%d", &n);
+
+    printf("Enter elements:");
+    for (i = 0; i < n; i++) {
+        scanf("%d", &num[i]);
+    }
+
+    printf("The elements are:\n");
+    for (i = 0; i < n; i++) {
+        printf("%d\t", num[i]);
+    }
+
+    for (i = 0; i < n; i++) {
+        if (num[i] % 2 == 0) {
+            sum = sum + num[i];
+        }
+    }
+    printf("\nSum of even numbers=%d", sum);
+    return 0;
+}
